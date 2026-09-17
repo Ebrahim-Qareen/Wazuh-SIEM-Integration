@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Lab topology — Cybersecurity Corp home lab">
+<title>Lab topology — Cybersecurity Corp home lab</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1220"/><stop offset="1" stop-color="#111C33"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1E2A45" stroke-width="1"/></pattern>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<marker id="arrow-EF4444" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#EF4444"/></marker>
+<marker id="arrow-4ADE80" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4ADE80"/></marker>
+</defs>
+<rect width="1200" height="640" rx="16" fill="url(#bg)"/>
+<rect width="1200" height="640" rx="16" fill="url(#grid)" opacity="0.55"/>
+<rect x="0" y="0" width="6" height="640" rx="3" fill="url(#accent)"/>
+<text x="34" y="38" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#E2E8F0">Lab topology</text>
+<text x="34" y="60" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#94A3B8">Cybersecurity Corp · VMware · one LAN behind Sophos XG</text>
+<g transform="translate(500,84)">
+<rect width="200" height="58" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="58" rx="2" fill="#F59E0B"/>
+<g transform="translate(14,12)"><rect x="2" y="4" width="24" height="20" rx="2" fill="none" stroke="#F59E0B" stroke-width="2"/><path d="M2 11h24M2 18h24M10 4v7M18 11v7M10 18v6" stroke="#F59E0B" stroke-width="1.6"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">Sophos XG</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">perimeter firewall</text>
+</g>
+<path d="M700,113 L740,113" fill="none" stroke="#64748B" stroke-width="1.5" opacity="1"/>
+<text x="748" y="117" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#64748B">WAN / Internet</text>
+<rect x="120" y="212" width="960" height="6" rx="3" fill="url(#accent)" opacity="0.9"/>
+<text x="600" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#22D3EE" text-anchor="middle">LAN  10.10.10.0/24</text>
+<path d="M600.0,142 L600,212" fill="none" stroke="#22D3EE" stroke-width="2" opacity="1"/>
+<g transform="translate(130,270)">
+<rect x="-3" y="-3" width="206" height="102" rx="13" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.7"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="1.8s" repeatCount="indefinite"/></rect>
+<rect width="200" height="96" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="96" rx="2" fill="#3B82F6"/>
+<g transform="translate(14,12)"><path d="M14 2l10 4v7c0 7-5 11-10 13C9 24 4 20 4 13V6z" fill="none" stroke="#3B82F6" stroke-width="2"/><path d="M9.5 14l3 3 6-7" fill="none" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">Wazuh Manager</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">10.10.10.2</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">manager + indexer</text>
+<text x="52" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">+ dashboard</text>
+</g>
+<g transform="translate(380,270)">
+<rect width="200" height="96" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="96" rx="2" fill="#22D3EE"/>
+<g transform="translate(14,12)"><rect x="3" y="3" width="22" height="7" rx="2" fill="none" stroke="#22D3EE" stroke-width="2"/><rect x="3" y="12" width="22" height="7" rx="2" fill="none" stroke="#22D3EE" stroke-width="2"/><rect x="3" y="21" width="22" height="5" rx="2" fill="none" stroke="#22D3EE" stroke-width="2"/><circle cx="8" cy="6.5" r="1.4" fill="#22D3EE"/><circle cx="8" cy="15.5" r="1.4" fill="#22D3EE"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">WS2025 DC</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">cybersecurity.local</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">agent + Sysmon</text>
+<text x="52" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">AD audit policy</text>
+</g>
+<g transform="translate(630,270)">
+<rect width="200" height="96" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="96" rx="2" fill="#22D3EE"/>
+<g transform="translate(14,12)"><rect x="2" y="4" width="24" height="15" rx="2" fill="none" stroke="#22D3EE" stroke-width="2"/><path d="M9 25h10M14 19v6" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">Win 11 / 10 / 7</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">domain-joined</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">agent + Sysmon</text>
+<text x="52" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">FIM</text>
+</g>
+<g transform="translate(880,270)">
+<rect width="200" height="96" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="96" rx="2" fill="#4ADE80"/>
+<g transform="translate(14,12)"><circle cx="14" cy="14" r="11" fill="none" stroke="#4ADE80" stroke-width="2"/><path d="M3 14h22M14 3c-4 4-4 18 0 22M14 3c4 4 4 18 0 22" fill="none" stroke="#4ADE80" stroke-width="1.6"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">Ubuntu</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">DVWA web target</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">Suricata sensor</text>
+<text x="52" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">agent + eve.json</text>
+</g>
+<path d="M230.0,218 L230.0,270" fill="none" stroke="#1E3A5F" stroke-width="2" opacity="1"/>
+<path d="M480.0,218 L480.0,270" fill="none" stroke="#1E3A5F" stroke-width="2" opacity="1"/>
+<path d="M730.0,218 L730.0,270" fill="none" stroke="#1E3A5F" stroke-width="2" opacity="1"/>
+<path d="M980.0,218 L980.0,270" fill="none" stroke="#1E3A5F" stroke-width="2" opacity="1"/>
+<path d="M480.0,270 L480.0,240 L230.0,240 L230.0,270" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 7" opacity="0.55"><animate attributeName="stroke-dashoffset" from="24" to="0" dur="1.2s" repeatCount="indefinite"/></path>
+<circle r="3" fill="#3B82F6" filter="url(#glow)"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite" path="M480.0,270 L480.0,240 L230.0,240 L230.0,270"/></circle>
+<path d="M730.0,270 L730.0,240 L230.0,240 L230.0,270" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 7" opacity="0.55"><animate attributeName="stroke-dashoffset" from="24" to="0" dur="1.2s" repeatCount="indefinite"/></path>
+<circle r="3" fill="#3B82F6" filter="url(#glow)"><animateMotion dur="2.4s" begin="0.6s" repeatCount="indefinite" path="M730.0,270 L730.0,240 L230.0,240 L230.0,270"/></circle>
+<path d="M980.0,270 L980.0,240 L230.0,240 L230.0,270" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="3 7" opacity="0.55"><animate attributeName="stroke-dashoffset" from="24" to="0" dur="1.2s" repeatCount="indefinite"/></path>
+<circle r="3" fill="#3B82F6" filter="url(#glow)"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M980.0,270 L980.0,240 L230.0,240 L230.0,270"/></circle>
+<g transform="translate(880,470)">
+<rect x="-3" y="-3" width="206" height="86" rx="13" fill="none" stroke="#EF4444" stroke-width="2" opacity="0.7"><animate attributeName="opacity" values="0.8;0.15;0.8" dur="1.8s" repeatCount="indefinite"/></rect>
+<rect width="200" height="80" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="80" rx="2" fill="#EF4444"/>
+<g transform="translate(14,12)"><circle cx="14" cy="14" r="9" fill="none" stroke="#EF4444" stroke-width="2"/><circle cx="14" cy="14" r="3" fill="#EF4444"/><path d="M14 1v6M14 21v6M1 14h6M21 14h6" stroke="#EF4444" stroke-width="2" stroke-linecap="round"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">Kali Purple</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">192.2.50.10</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">attacker</text>
+<rect x="162" y="8" width="30" height="16" rx="8" fill="#EF4444" fill-opacity="0.18" stroke="#EF4444" stroke-opacity="0.6"/>
+<text x="177.0" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#EF4444" text-anchor="middle">RED</text>
+</g>
+<circle cx="908" cy="496" r="10" fill="none" stroke="#EF4444" stroke-width="2"><animate attributeName="r" from="10" to="34" dur="2.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" from="0.9" to="0" dur="2.2s" begin="0s" repeatCount="indefinite"/></circle>
+<path d="M880,510.0 L800,510.0 L800,420 L480.0,420" fill="none" stroke="#EF4444" stroke-width="2" stroke-dasharray="6 6" opacity="0.8"><animate attributeName="stroke-dashoffset" from="24" to="0" dur="1.2s" repeatCount="indefinite"/></path>
+<path d="M980.0,420 L980.0,366" fill="none" stroke="#EF4444" stroke-width="2" opacity="1" marker-end="url(#arrow-EF4444)"/>
+<circle r="4" fill="#EF4444" filter="url(#glow)"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite" path="M880,510.0 L800,510.0 L800,420 L980.0,420 L980.0,366"/></circle>
+<text x="980.0" y="440" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#EF4444" text-anchor="middle">SQLi · XSS · cmd inj · web shell</text>
+<path d="M730.0,420 L730.0,366" fill="none" stroke="#EF4444" stroke-width="2" opacity="1" marker-end="url(#arrow-EF4444)"/>
+<circle r="4" fill="#EF4444" filter="url(#glow)"><animateMotion dur="3.0s" begin="0.9s" repeatCount="indefinite" path="M880,510.0 L800,510.0 L800,420 L730.0,420 L730.0,366"/></circle>
+<text x="730.0" y="440" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#EF4444" text-anchor="middle">Mimikatz · LSASS · EICAR</text>
+<path d="M480.0,420 L480.0,366" fill="none" stroke="#EF4444" stroke-width="2" opacity="1" marker-end="url(#arrow-EF4444)"/>
+<circle r="4" fill="#EF4444" filter="url(#glow)"><animateMotion dur="3.4s" begin="1.8s" repeatCount="indefinite" path="M880,510.0 L800,510.0 L800,420 L480.0,420 L480.0,366"/></circle>
+<text x="480.0" y="440" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#EF4444" text-anchor="middle">new admin · sched task</text>
+<g transform="translate(130,470)">
+<rect width="200" height="80" rx="10" fill="#0F172A" stroke="#1E3A5F" stroke-width="1.5"/>
+<rect width="4" height="80" rx="2" fill="#4ADE80"/>
+<g transform="translate(14,12)"><circle cx="14" cy="9" r="5" fill="none" stroke="#4ADE80" stroke-width="2"/><path d="M4 25c1-6 5-8 10-8s9 2 10 8" fill="none" stroke="#4ADE80" stroke-width="2" stroke-linecap="round"/></g>
+<text x="52" y="28" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#E2E8F0">SOC Analyst</text>
+<text x="52" y="44" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">Wazuh dashboard</text>
+<text x="52" y="58" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#94A3B8">triage · enrich · respond</text>
+</g>
+<path d="M230.0,366 L230.0,470" fill="none" stroke="#4ADE80" stroke-width="2" opacity="1" marker-end="url(#arrow-4ADE80)"/>
+<circle r="3.5" fill="#4ADE80" filter="url(#glow)"><animateMotion dur="1.6s" begin="0.3s" repeatCount="indefinite" path="M230.0,366 L230.0,470"/></circle>
+<text x="240" y="430" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#4ADE80">alerts</text>
+<text x="600" y="590" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" fill="#F59E0B" text-anchor="middle">Active response: repeated brute force → firewall-drop on the source IP</text>
+<circle cx="406" cy="490" r="5" fill="#3B82F6"/>
+<text x="418" y="494" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#94A3B8">agent telemetry → manager</text>
+<circle cx="406" cy="508" r="5" fill="#EF4444"/>
+<text x="418" y="512" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#94A3B8">attack traffic from Kali</text>
+<circle cx="406" cy="526" r="5" fill="#4ADE80"/>
+<text x="418" y="530" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#94A3B8">alerts to the analyst</text>
+<text x="34" y="626" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#64748B">Wazuh-SIEM-Integration · assets/readme/topology.svg</text>
+</svg>
