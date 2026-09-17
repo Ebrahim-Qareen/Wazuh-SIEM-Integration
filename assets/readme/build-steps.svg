@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Build it yourself — 8 steps · the file next to each step tells you exactly what to do">
+<title>Build it yourself — 8 steps · the file next to each step tells you exactly what to do</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#131720"/></linearGradient>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#3b82f6"/></linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#252b38" stroke-width="1"/></pattern>
+<filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<marker id="arrow-333b4c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#333b4c"/></marker>
+</defs>
+<rect width="1200" height="400" rx="16" fill="url(#bg)"/>
+<rect x="0.75" y="0.75" width="1198.5" height="398.5" rx="16" fill="none" stroke="#252b38" stroke-width="1.5"/>
+<rect width="1200" height="400" rx="16" fill="url(#grid)" opacity="0.55"/>
+<rect x="0" y="0" width="6" height="400" rx="3" fill="url(#accent)"/>
+<text x="34" y="38" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#e4e8ee">Build it yourself</text>
+<text x="34" y="60" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" fill="#a0aab6">8 steps · the file next to each step tells you exactly what to do</text>
+<rect x="34" y="76" width="1132" height="4" rx="2" fill="#333b4c"/>
+<rect x="34" y="76" width="0" height="4" rx="2" fill="url(#accent)"><animate attributeName="width" from="0" to="1132" dur="4.3s" repeatCount="indefinite"/></rect>
+<circle cy="78" r="6" fill="#e4e8ee" filter="url(#glow)"><animate attributeName="cx" from="34" to="1166" dur="4.3s" repeatCount="indefinite"/></circle>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.4s" fill="freeze"/>
+<rect x="34.0" y="96" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="34.0" y="96" width="4" height="118" rx="2" fill="#fbbf24"/>
+<circle cx="64.0" cy="124" r="15" fill="#fbbf24" fill-opacity="0.16" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="64.0" y="129" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle">1</text>
+<g transform="translate(259.5,110)"><rect x="2" y="4" width="24" height="15" rx="2" fill="none" stroke="#fbbf24" stroke-width="2"/><path d="M9 25h10M14 19v6" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/></g>
+<text x="88.0" y="129" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Build the VMs</text>
+<text x="50.0" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">VMware: Sophos, DC, Win 11/10/7, Ubuntu, Kali</text>
+<text x="50.0" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#fbbf24">home lab — see Topology above</text>
+<path d="M303.5,155.0 L321.5,155.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.55s" dur="0.4s" fill="freeze"/>
+<rect x="321.5" y="96" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="321.5" y="96" width="4" height="118" rx="2" fill="#3b82f6"/>
+<circle cx="351.5" cy="124" r="15" fill="#3b82f6" fill-opacity="0.16" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="351.5" y="129" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#3b82f6" text-anchor="middle">2</text>
+<g transform="translate(547.0,110)"><path d="M14 2l10 4v7c0 7-5 11-10 13C9 24 4 20 4 13V6z" fill="none" stroke="#3b82f6" stroke-width="2"/><path d="M9.5 14l3 3 6-7" fill="none" stroke="#3b82f6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="375.5" y="129" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Install the manager</text>
+<text x="337.5" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">one-line installer on Ubuntu, open the dashboard</text>
+<text x="337.5" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#3b82f6">docs/build-guide.md §1</text>
+<path d="M591.0,155.0 L609.0,155.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.4s" fill="freeze"/>
+<rect x="609.0" y="96" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="609.0" y="96" width="4" height="118" rx="2" fill="#22d3ee"/>
+<circle cx="639.0" cy="124" r="15" fill="#22d3ee" fill-opacity="0.16" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="639.0" y="129" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#22d3ee" text-anchor="middle">3</text>
+<g transform="translate(834.5,110)"><rect x="3" y="3" width="22" height="7" rx="2" fill="none" stroke="#22d3ee" stroke-width="2"/><rect x="3" y="12" width="22" height="7" rx="2" fill="none" stroke="#22d3ee" stroke-width="2"/><rect x="3" y="21" width="22" height="5" rx="2" fill="none" stroke="#22d3ee" stroke-width="2"/><circle cx="8" cy="6.5" r="1.4" fill="#22d3ee"/><circle cx="8" cy="15.5" r="1.4" fill="#22d3ee"/></g>
+<text x="663.0" y="129" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Agents + Sysmon</text>
+<text x="625.0" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">enroll Windows / Linux agents, add Sysmon</text>
+<text x="625.0" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#22d3ee">docs/build-guide.md §2</text>
+<path d="M878.5,155.0 L896.5,155.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.4s" fill="freeze"/>
+<rect x="896.5" y="96" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="896.5" y="96" width="4" height="118" rx="2" fill="#a78bfa"/>
+<circle cx="926.5" cy="124" r="15" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="926.5" y="129" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#a78bfa" text-anchor="middle">4</text>
+<g transform="translate(1122.0,110)"><path d="M2 14s4.5-8 12-8 12 8 12 8-4.5 8-12 8S2 14 2 14z" fill="none" stroke="#a78bfa" stroke-width="2"/><circle cx="14" cy="14" r="3.5" fill="#a78bfa"/></g>
+<text x="950.5" y="129" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">FIM + VirusTotal</text>
+<text x="912.5" y="158" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">watch /etc, web root, System32 + VT key</text>
+<text x="912.5" y="176" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#a78bfa">docs/build-guide.md §3</text>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.4s" fill="freeze"/>
+<rect x="34.0" y="236" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="34.0" y="236" width="4" height="118" rx="2" fill="#4ade80"/>
+<circle cx="64.0" cy="264" r="15" fill="#4ade80" fill-opacity="0.16" stroke="#4ade80" stroke-width="1.5"/>
+<text x="64.0" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#4ade80" text-anchor="middle">5</text>
+<g transform="translate(259.5,250)"><circle cx="14" cy="14" r="11" fill="none" stroke="#4ade80" stroke-width="2"/><path d="M3 14h22M14 3c-4 4-4 18 0 22M14 3c4 4 4 18 0 22" fill="none" stroke="#4ade80" stroke-width="1.6"/></g>
+<text x="88.0" y="269" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Suricata sensor</text>
+<text x="50.0" y="298" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">eve.json on Ubuntu, read by the agent</text>
+<text x="50.0" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#4ade80">docs/build-guide.md §4</text>
+<path d="M303.5,295.0 L321.5,295.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.95s" dur="0.4s" fill="freeze"/>
+<rect x="321.5" y="236" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="321.5" y="236" width="4" height="118" rx="2" fill="#fbbf24"/>
+<circle cx="351.5" cy="264" r="15" fill="#fbbf24" fill-opacity="0.16" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="351.5" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle">6</text>
+<g transform="translate(547.0,250)"><rect x="2" y="4" width="24" height="20" rx="2" fill="none" stroke="#fbbf24" stroke-width="2"/><path d="M2 11h24M2 18h24M10 4v7M18 11v7M10 18v6" stroke="#fbbf24" stroke-width="1.6"/></g>
+<text x="375.5" y="269" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Active response</text>
+<text x="337.5" y="298" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">auto firewall-drop on brute force</text>
+<text x="337.5" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#fbbf24">docs/build-guide.md §5</text>
+<path d="M591.0,295.0 L609.0,295.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.3s" dur="0.4s" fill="freeze"/>
+<rect x="609.0" y="236" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="609.0" y="236" width="4" height="118" rx="2" fill="#3b82f6"/>
+<circle cx="639.0" cy="264" r="15" fill="#3b82f6" fill-opacity="0.16" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="639.0" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#3b82f6" text-anchor="middle">7</text>
+<g transform="translate(834.5,250)"><circle cx="14" cy="14" r="5" fill="none" stroke="#3b82f6" stroke-width="2"/><path d="M14 2v4M14 22v4M2 14h4M22 14h4M5.5 5.5l3 3M19.5 19.5l3 3M5.5 22.5l3-3M19.5 8.5l3-3" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/></g>
+<text x="663.0" y="269" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Load the rules</text>
+<text x="625.0" y="298" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">copy rules + decoders, restart the manager</text>
+<text x="625.0" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#3b82f6">docs/build-guide.md §6 · rules/</text>
+<path d="M878.5,295.0 L896.5,295.0" stroke="#333b4c" stroke-width="2" marker-end="url(#arrow-333b4c)"/>
+</g>
+<g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.65s" dur="0.4s" fill="freeze"/>
+<rect x="896.5" y="236" width="269.5" height="118" rx="10" fill="#1a1f2a" stroke="#333b4c" stroke-width="1.5"/>
+<rect x="896.5" y="236" width="4" height="118" rx="2" fill="#e63946"/>
+<circle cx="926.5" cy="264" r="15" fill="#e63946" fill-opacity="0.16" stroke="#e63946" stroke-width="1.5"/>
+<text x="926.5" y="269" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#e63946" text-anchor="middle">8</text>
+<g transform="translate(1122.0,250)"><circle cx="14" cy="14" r="9" fill="none" stroke="#e63946" stroke-width="2"/><circle cx="14" cy="14" r="3" fill="#e63946"/><path d="M14 1v6M14 21v6M1 14h6M21 14h6" stroke="#e63946" stroke-width="2" stroke-linecap="round"/></g>
+<text x="950.5" y="269" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#e4e8ee">Attack, then read</text>
+<text x="912.5" y="298" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" fill="#a0aab6">run SSH brute force from Kali, read the alert</text>
+<text x="912.5" y="316" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#e63946">docs/attack-walkthroughs.md §1</text>
+</g>
+<text x="34" y="386" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#768290">Wazuh-SIEM-Integration · assets/readme/build-steps.svg</text>
+</svg>
