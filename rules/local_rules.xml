@@ -1,0 +1,95 @@
+<!-- Wazuh SIEM Integration Lab — custom rules
+     ID block 100100–100199. Validate every rule in Tools → Ruleset Test
+     with the matching sample in scripts/logtest-samples/ before deploying. -->
+
+<group name="lab,suricata,recon,">
+  <!-- T1046 Network service scanning (Suricata ET SCAN) -->
+  <rule id="100100" level="7">
+    <if_sid>86601</if_sid>
+    <field name="alert.signature" type="pcre2">(?i)ET SCAN.*(nmap|masscan|port ?scan)</field>
+    <description>Suricata: port/service scan from $(src_ip) — $(alert.signature)</description>
+    <mitre><id>T1046</id></mitre>
+  </rule>
+</group>
+
+<group name="lab,sshd,authentication_failed,">
+  <!-- T1110.001 SSH brute force: 8 failures from same source in 120s -->
+  <rule id="100110" level="10" frequency="8" timeframe="120">
+    <if_matched_sid>5716</if_matched_sid>
+    <same_source_ip />
+    <description>SSH brute force: 8+ failed logins from $(srcip) in 2 minutes</description>
+    <mitre><id>T1110.001</id></mitre>
+  </rule>
+</group>
+
+<group name="lab,web,attack,">
+  <!-- T1190 SQL injection against DVWA (Apache access log) -->
+  <rule id="100120" level="12">
+    <if_sid>31100</if_sid>
+    <field name="url" type="pcre2">(?i)(\bunion\b.{0,40}\bselect\b|\bor\b\s+\d+\s*=\s*\d+|'\s*or\s*'|sleep\(\d+\)|benchmark\()</field>
+    <description>Web: SQL injection pattern in request from $(srcip) — $(url)</description>
+    <mitre><id>T1190</id></mitre>
+  </rule>
+
+  <!-- T1189 XSS payload in request -->
+  <rule id="100121" level="12">
+    <if_sid>31100</if_sid>
+    <field name="url" type="pcre2">(?i)(&lt;script\b|javascript:|onerror\s*=|onload\s*=|&lt;iframe\b|&lt;svg\b)</field>
+    <description>Web: XSS payload in request from $(srcip) — $(url)</description>
+    <mitre><id>T1189</id></mitre>
+  </rule>
+
+  <!-- T1059.004 Command injection -->
+  <rule id="100122" level="13">
+    <if_sid>31100</if_sid>
+    <field name="url" type="pcre2">(?i)(;|%3b|\|\||&amp;&amp;|`)\s*(cat|ls|id|whoami|nc|bash|sh|wget|curl|python)\b</field>
+    <description>Web: command injection attempt from $(srcip) — $(url)</description>
+    <mitre><id>T1059.004</id></mitre>
+  </rule>
+</group>
+
+<group name="lab,syscheck,virustotal,">
+  <!-- T1505.003 New file in web root -->
+  <rule id="100130" level="14">
+    <if_sid>554</if_sid>
+    <field name="file" type="pcre2">^/var/www/html/.*\.(php|phtml|jsp|aspx?)$</field>
+    <description>FIM: new server-side script dropped in web root — $(file)</description>
+    <mitre><id>T1505.003</id></mitre>
+  </rule>
+
+  <!-- T1204.002 VirusTotal positive on monitored file -->
+  <rule id="100131" level="13">
+    <if_sid>87105</if_sid>
+    <description>VirusTotal: $(virustotal.positives) engines flagged $(virustotal.source.file)</description>
+    <mitre><id>T1204.002</id></mitre>
+  </rule>
+</group>
+
+<group name="lab,windows,sysmon,credential_access,">
+  <!-- T1003.001 LSASS access (Sysmon EID 10) -->
+  <rule id="100140" level="14">
+    <if_sid>61612</if_sid>
+    <field name="win.eventdata.targetImage" type="pcre2">(?i)\\lsass\.exe$</field>
+    <field name="win.eventdata.grantedAccess" type="pcre2">(?i)0x1010|0x1038|0x1fffff</field>
+    <description>Sysmon: $(win.eventdata.sourceImage) opened LSASS with $(win.eventdata.grantedAccess) — possible credential dumping</description>
+    <mitre><id>T1003.001</id></mitre>
+  </rule>
+</group>
+
+<group name="lab,windows,persistence,">
+  <!-- T1136.001 New local account -->
+  <rule id="100150" level="12">
+    <if_sid>60109</if_sid>
+    <field name="win.system.eventID">^4720$</field>
+    <description>Windows: local account $(win.eventdata.targetUserName) created by $(win.eventdata.subjectUserName)</description>
+    <mitre><id>T1136.001</id></mitre>
+  </rule>
+
+  <!-- T1053.005 Scheduled task created -->
+  <rule id="100151" level="11">
+    <if_sid>60109</if_sid>
+    <field name="win.system.eventID">^4698$</field>
+    <description>Windows: scheduled task $(win.eventdata.taskName) created by $(win.eventdata.subjectUserName)</description>
+    <mitre><id>T1053.005</id></mitre>
+  </rule>
+</group>
