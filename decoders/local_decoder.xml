@@ -1,0 +1,4 @@
+<!-- Custom decoders for the lab. Add only when a log source is not decoded by the default ruleset. -->
+<decoder name="lab-placeholder">
+  <prematch>LAB-PLACEHOLDER</prematch>
+</decoder>
